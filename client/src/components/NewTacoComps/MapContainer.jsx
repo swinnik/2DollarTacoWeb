@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 export default function MapContainer({ tacoDetails }) {
@@ -9,7 +10,7 @@ export default function MapContainer({ tacoDetails }) {
   // }
 
   return (
-    <LoadScript googleMapsApiKey={process.env.googleMapsApiKey}>
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
       <GoogleMap center={{ lat: latitude, lng: longitude }} zoom={15}>
         {/* Add map markers, overlays, or other components */}
       </GoogleMap>
