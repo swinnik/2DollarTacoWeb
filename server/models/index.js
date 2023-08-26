@@ -1,0 +1,1 @@
+exports.vendors = require("./seanModels");
